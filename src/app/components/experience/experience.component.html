@@ -1,0 +1,42 @@
+
+    <section id="experience" class="experience section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Career Path</span>
+          <h2 class="section-title">Work Experience</h2>
+          <p class="section-subtitle">
+            Building innovative solutions across various industries
+          </p>
+        </div>
+
+        <div class="timeline">
+          @for (exp of experiences(); track exp.id; let i = $index) {
+            <div class="timeline-item" [class.right]="i % 2 !== 0">
+              <div class="timeline-marker">
+                <div class="marker-dot"></div>
+              </div>
+              <div class="timeline-content">
+                <div class="exp-header">
+                  <span class="exp-period">{{ exp.period }}</span>
+                  <span class="exp-location">{{ exp.location }}</span>
+                </div>
+                <h3 class="exp-title">{{ exp.title }}</h3>
+                <h4 class="exp-company">{{ exp.company }}</h4>
+                <p class="exp-description">{{ exp.description }}</p>
+                <ul class="exp-achievements">
+                  @for (achievement of exp.achievements; track achievement) {
+                    <li>{{ achievement }}</li>
+                  }
+                </ul>
+                <div class="exp-technologies">
+                  @for (tech of exp.technologies; track tech) {
+                    <span class="tech-tag">{{ tech }}</span>
+                  }
+                </div>
+              </div>
+            </div>
+          }
+        </div>
+      </div>
+    </section>
+  
