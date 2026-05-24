@@ -1,0 +1,155 @@
+$color-background: #0a0a0b;
+$color-surface: #111113;
+$color-surface-elevated: #18181b;
+$color-border: #27272a;
+$color-text-primary: #fafafa;
+$color-text-secondary: #a1a1aa;
+$color-text-muted: #71717a;
+$color-accent: #3b82f6;
+$color-accent-hover: #2563eb;
+
+.skills {
+  background: $color-surface;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+
+  .section-label {
+    display: inline-block;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.875rem;
+    color: $color-accent;
+    margin-bottom: 1rem;
+    letter-spacing: 0.05em;
+  }
+
+  .section-title {
+    font-size: 2.25rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    color: $color-text-primary;
+
+    @media (max-width: 768px) {
+      font-size: 1.875rem;
+    }
+  }
+
+  .section-subtitle {
+    color: $color-text-secondary;
+    font-size: 1.125rem;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
+
+.skills-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.tab-btn {
+  padding: 0.75rem 1.5rem;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: $color-text-secondary;
+  background: transparent;
+  border: 1px solid $color-border;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+
+  &:hover {
+    color: $color-text-primary;
+    border-color: $color-text-muted;
+  }
+
+  &.active {
+    background: $color-accent;
+    color: $color-text-primary;
+    border-color: $color-accent;
+  }
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 4rem;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.skill-card {
+  background: $color-background;
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid $color-border;
+  transition: all 0.3s ease;
+
+  &:hover {
+    border-color: $color-accent;
+    transform: translateY(-2px);
+  }
+}
+
+.skill-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.skill-name {
+  font-weight: 500;
+  color: $color-text-primary;
+}
+
+.skill-percent {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.875rem;
+  color: $color-accent;
+}
+
+.skill-bar {
+  height: 8px;
+  background: $color-surface-elevated;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.skill-progress {
+  height: 100%;
+  background: linear-gradient(90deg, $color-accent, #60a5fa);
+  border-radius: 4px;
+  transition: width 1s ease-out;
+}
+
+.tech-logos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.tech-item {
+  padding: 0.75rem 1.5rem;
+  background: $color-background;
+  border: 1px solid $color-border;
+  border-radius: 8px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.875rem;
+  color: $color-text-secondary;
+  transition: all 0.3s ease;
+
+  &:hover {
+    color: $color-accent;
+    border-color: $color-accent;
+    transform: translateY(-2px);
+  }
+}

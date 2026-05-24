@@ -1,0 +1,216 @@
+$color-background: #0a0a0b;
+$color-surface: #111113;
+$color-surface-elevated: #18181b;
+$color-border: #27272a;
+$color-text-primary: #fafafa;
+$color-text-secondary: #a1a1aa;
+$color-text-muted: #71717a;
+$color-accent: #3b82f6;
+
+.experience {
+  background: $color-background;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 4rem;
+
+  .section-label {
+    display: inline-block;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.875rem;
+    color: $color-accent;
+    margin-bottom: 1rem;
+    letter-spacing: 0.05em;
+  }
+
+  .section-title {
+    font-size: 2.25rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    color: $color-text-primary;
+
+    @media (max-width: 768px) {
+      font-size: 1.875rem;
+    }
+  }
+
+  .section-subtitle {
+    color: $color-text-secondary;
+    font-size: 1.125rem;
+  }
+}
+
+.timeline {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to bottom, $color-accent, $color-border, transparent);
+
+    @media (max-width: 768px) {
+      left: 20px;
+    }
+  }
+}
+
+.timeline-item {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  padding: 0 0 3rem 0;
+  width: 50%;
+  padding-right: 3rem;
+
+  &.right {
+    margin-left: 50%;
+    padding-right: 0;
+    padding-left: 3rem;
+
+    @media (max-width: 768px) {
+      margin-left: 0;
+      padding-left: 4rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 4rem;
+  }
+
+  &:last-child {
+    padding-bottom: 0;
+  }
+}
+
+.timeline-marker {
+  position: absolute;
+  left: calc(100% - 8px);
+  top: 0;
+  z-index: 1;
+
+  .right & {
+    left: -8px;
+  }
+
+  @media (max-width: 768px) {
+    left: 12px !important;
+  }
+
+  .marker-dot {
+    width: 16px;
+    height: 16px;
+    background: $color-accent;
+    border-radius: 50%;
+    border: 3px solid $color-background;
+    box-shadow: 0 0 0 3px $color-accent;
+  }
+}
+
+.timeline-content {
+  background: $color-surface;
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid $color-border;
+  transition: all 0.3s ease;
+  width: 100%;
+
+  &:hover {
+    border-color: $color-accent;
+    transform: translateY(-4px);
+  }
+}
+
+.exp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.exp-period {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.8125rem;
+  color: $color-accent;
+  background: rgba($color-accent, 0.1);
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+}
+
+.exp-location {
+  font-size: 0.8125rem;
+  color: $color-text-muted;
+}
+
+.exp-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: $color-text-primary;
+  margin-bottom: 0.25rem;
+}
+
+.exp-company {
+  font-size: 1rem;
+  font-weight: 500;
+  color: $color-text-secondary;
+  margin-bottom: 1rem;
+}
+
+.exp-description {
+  color: $color-text-secondary;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  font-size: 0.9375rem;
+}
+
+.exp-achievements {
+  margin-bottom: 1rem;
+
+  li {
+    position: relative;
+    padding-left: 1.25rem;
+    color: $color-text-secondary;
+    font-size: 0.875rem;
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+
+    &::before {
+      content: '→';
+      position: absolute;
+      left: 0;
+      color: $color-accent;
+    }
+  }
+}
+
+.exp-technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tech-tag {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  padding: 0.25rem 0.625rem;
+  background: $color-surface-elevated;
+  border: 1px solid $color-border;
+  border-radius: 4px;
+  color: $color-text-muted;
+  transition: all 0.2s ease;
+
+  &:hover {
+    color: $color-accent;
+    border-color: $color-accent;
+  }
+}

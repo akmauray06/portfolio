@@ -1,0 +1,120 @@
+$color-background: #0a0a0b;
+$color-surface: #111113;
+$color-border: #27272a;
+$color-text-primary: #fafafa;
+$color-text-secondary: #a1a1aa;
+$color-text-muted: #71717a;
+$color-accent: #3b82f6;
+
+.footer {
+  background: $color-surface;
+  border-top: 1px solid $color-border;
+  padding: 4rem 0 2rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid $color-border;
+
+  @media (max-width: 640px) {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.footer-brand {
+  .logo {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1.5rem;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 2px;
+    margin-bottom: 0.75rem;
+
+    .logo-bracket {
+      color: $color-accent;
+    }
+
+    .logo-text {
+      color: $color-text-primary;
+    }
+  }
+}
+
+.footer-tagline {
+  color: $color-text-muted;
+  font-size: 0.9375rem;
+  max-width: 280px;
+}
+
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+
+  @media (max-width: 640px) {
+    justify-content: center;
+  }
+
+  a {
+    color: $color-text-secondary;
+    font-size: 0.9375rem;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: $color-accent;
+    }
+  }
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+  @media (max-width: 640px) {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.copyright {
+  color: $color-text-muted;
+  font-size: 0.875rem;
+}
+
+.built-with {
+  color: $color-text-muted;
+  font-size: 0.875rem;
+
+  .heart {
+    color: #ef4444;
+    display: inline-block;
+    animation: heartbeat 1.5s ease-in-out infinite;
+  }
+}
+
+@keyframes heartbeat {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
