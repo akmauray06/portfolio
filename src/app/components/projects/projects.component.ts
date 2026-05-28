@@ -44,53 +44,45 @@ export class ProjectsComponent {
     //   featured: true
     // }
   projects = signal<Project[]>([
-    {
-      id: 1,
-      title: 'E-Commerce Platform',
-      description: 'A full-featured e-commerce solution with microservices architecture, real-time inventory management, and payment integration.',
-      image: '',
-      technologies: ['ASP.NET Core', 'Angular', 'Azure', 'SQL Server', 'Redis'],
-      featured: true
-    },
-    {
-      id: 2,
-      title: 'Healthcare Management System',
-      description: 'HIPAA-compliant patient management system with appointment scheduling, medical records, and billing integration.',
-      image: '',
-      technologies: ['C#', '.NET 6', 'Blazor', 'PostgreSQL', 'Docker'],
-      featured: true
-    },
-    {
-      id: 3,
-      title: 'Real-Time Analytics Dashboard',
-      description: 'Interactive dashboard for monitoring KPIs with real-time data streaming and customizable visualizations.',
-      image: '',
-      technologies: ['Angular', 'SignalR', 'Azure Functions', 'CosmosDB'],
-      featured: false
-    },
-    {
-      id: 4,
-      title: 'Task Management API',
-      description: 'RESTful API for task management with authentication, role-based access, and comprehensive documentation.',
-      image: '',
-      technologies: ['ASP.NET Core', 'Entity Framework', 'JWT', 'Swagger'],
-      featured: false
-    },
-    {
-      id: 5,
-      title: 'Financial Portfolio Tracker',
-      description: 'Application for tracking investments with real-time market data, performance analytics, and reporting.',
-      image: '',
-      technologies: ['.NET MAUI', 'Web API', 'SQL Server', 'Azure'],
-      featured: false
-    },
-    {
-      id: 6,
-      title: 'CI/CD Pipeline Generator',
-      description: 'Tool that generates customized Azure DevOps pipelines based on project configuration and best practices.',
-      image: '',
-      technologies: ['C#', 'Azure DevOps API', 'YAML', 'PowerShell'],
-      featured: false
-    }
+   {
+  id: 1,
+  title: 'E-Commerce API Development',
+  description: 'Developed REST APIs for Magento e-commerce integration, including real-time order processing, inventory synchronization, and product price updates. Integrated Magento with Salesforce to enable seamless data flow and automated business operations.',
+  image: '',
+  technologies: ['C#', 'ASP.NET Core Web API', 'SQL Server', 'AS400 DB', 'Magento', 'Salesforce'],
+  featured: true
+},
+{
+  id: 2,
+  title: 'Custom Order System (COS)',
+  description: 'Built a web-based custom furniture ordering system with dynamic product configuration, pricing calculation, contract management, and order processing features. Improved order accuracy and automated business workflows.',
+  image: '',
+  technologies: ['C#', 'ASP.NET Core Web API', 'Angular', 'SQL Server', 'PostgreSQL', 'AS400 DB'],
+  featured: true
+},
+{
+  id: 3,
+  title: 'Order Management System (OMS)',
+  description: 'Developed and maintained an Order Management System for furniture sales operations, including cart management, quote handling, checkout, inventory tracking, and customer management functionalities.',
+  image: '',
+  technologies: ['C#', 'ASP.NET Core Web API', 'Angular', 'SQL Server', 'PostgreSQL', 'AS400 DB'],
+  featured: true
+},
+{
+  id: 4,
+  title: 'HR Portal Application',
+  description: 'Developed an HR Portal for employee profile and account management with Azure Active Directory integration for secure authentication and centralized employee operations.',
+  image: '',
+  technologies: ['ASP.NET Core', 'Angular', 'Azure Active Directory', 'REST APIs'],
+  featured: false
+},
+{
+  id: 5,
+  title: 'Background Services & Console Applications',
+  description: 'Created multiple console applications and background services for business process automation, including inventory processing, catalog generation, scheduling, and server monitoring.',
+  image: '',
+  technologies: ['C#', 'ASP.NET Core', 'SQL Server', 'Background Services'],
+  featured: false
+}
   ]);
 }

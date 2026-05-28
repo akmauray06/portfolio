@@ -38,10 +38,11 @@ export class SkillsComponent {
       skills: [
         { name: 'C# / .NET Core', level: 95 },
         { name: 'ASP.NET Core Web API', level: 92 },
+        { name: 'REST APIs', level: 92 },
         { name: 'Entity Framework Core', level: 90 },
-        { name: 'SQL Server', level: 88 },
-        { name: 'Microservices', level: 85 },
-        { name: 'Redis / Caching', level: 82 }
+        { name: 'ASP.NET MVC', level: 88 },
+        { name: 'ADO.NET', level: 85 },
+        { name: 'Dapper', level: 82 }
       ]
     },
     {
@@ -51,34 +52,30 @@ export class SkillsComponent {
         { name: 'TypeScript', level: 92 },
         { name: 'HTML5 / CSS3 / SCSS', level: 88 },
         { name: 'RxJS', level: 85 },
-        { name: 'NgRx State Management', level: 80 },
-        { name: 'Responsive Design', level: 90 }
+        { name: 'Angular Material', level: 80 },
+        { name: 'Bootstrap', level: 90 }
       ]
     },
     {
-      name: 'Cloud & DevOps',
+      name: 'Databases',
       skills: [
-        { name: 'Microsoft Azure', level: 88 },
-        { name: 'Azure DevOps / CI/CD', level: 85 },
-        { name: 'Docker & Kubernetes', level: 80 },
-        { name: 'Azure Functions', level: 82 },
-        { name: 'Azure Service Bus', level: 78 },
-        { name: 'Terraform / IaC', level: 75 }
+        { name: 'MSSQL', level: 90 },
+        { name: 'PostgreSQL', level: 90}
       ]
     },
     {
-      name: 'Tools & Practices',
+      name: 'Tools',
       skills: [
-        { name: 'Git / Version Control', level: 95 },
-        { name: 'Unit Testing / xUnit', level: 88 },
-        { name: 'Agile / Scrum', level: 90 },
-        { name: 'Clean Architecture', level: 85 },
-        { name: 'Design Patterns', level: 88 },
-        { name: 'Code Review', level: 92 }
+        { name: 'Git and Bitbucket / Version Control', level: 95 },
+        { name: 'Post Man', level: 88 },
+        { name: 'DBever', level: 90 },
+        // { name: '', level: 85 },
+        // { name: 'Design Patterns', level: 88 },
+        // { name: 'Code Review', level: 92 }
       ]
     }
   ]);
-
+HighLightSkills : string []=["C#",".Net",'.Net Core','REST Apis','MVC','Angular','TypeScript','JavaScript','HTML','CSS','MSSQL','PostgreSQL'];
   activeCategory = signal('Backend');
 
   setActiveCategory(category: string) {

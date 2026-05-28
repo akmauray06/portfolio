@@ -137,3 +137,4 @@ $color-accent: #3b82f6;
     color: $color-text-muted;
   }
 }
+.profile-image { width: 100%; max-width: 350px; height: auto; border-radius: 20px; object-fit: cover; display: block; }

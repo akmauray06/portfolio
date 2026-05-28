@@ -23,45 +23,19 @@ export class ExperienceComponent {
   experiences = signal<Experience[]>([
     {
       id: 1,
-      title: 'Senior .NET Developer',
-      company: 'TechCorp Solutions',
-      location: 'San Francisco, CA',
-      period: '2022 - Present',
-      description: 'Leading the development of enterprise-grade microservices architecture for a major fintech platform.',
-      achievements: [
-        'Architected microservices handling 1M+ daily transactions',
-        'Reduced API response time by 60% through optimization',
-        'Mentored team of 5 junior developers'
-      ],
-      technologies: ['ASP.NET Core', 'Azure', 'Kubernetes', 'Angular']
-    },
-    {
-      id: 2,
-      title: 'Full Stack Developer',
-      company: 'InnovateTech Inc.',
-      location: 'Seattle, WA',
-      period: '2019 - 2022',
-      description: 'Developed and maintained multiple client-facing web applications using .NET and Angular.',
-      achievements: [
-        'Built real-time dashboard serving 50K+ active users',
-        'Implemented CI/CD pipeline reducing deployment time by 75%',
-        'Led migration from .NET Framework to .NET Core'
-      ],
-      technologies: ['C#', 'Angular', 'SQL Server', 'Azure DevOps']
-    },
-    {
-      id: 3,
       title: '.NET Developer',
-      company: 'Digital Dynamics',
-      location: 'Austin, TX',
-      period: '2016 - 2019',
-      description: 'Contributed to the development of healthcare management systems with focus on security and compliance.',
+      company: 'SourceMash Technology',
+      location: 'Mohali Punjab, India',
+      period: '2023 - Present',
+      description: 'Full Stack .NET Developer SourceMash Technologies Built scalable web applications using C#, ASP.NET Core, Angular and SQL Server. Responsible for REST API development, frontend implementation, database optimization, bug fixing and supporting application deployment in an Agile environment.',
       achievements: [
-        'Developed HIPAA-compliant data processing modules',
-        'Improved database query performance by 40%',
-        'Created reusable component library used across 3 projects'
+        'Developed and maintained scalable web applications using C#, ASP.NET Core, Angular, and SQL Server.',
+        'Improved application performance by optimizing SQL queries and API response times.',
+        'Mentored team of 5 junior developersDesigned and integrated secure REST APIs for seamless frontend and backend communication.',
+        'Built responsive and user-friendly UI components in Angular, enhancing overall user experience.',
+        'Collaborated with cross-functional teams in Agile development to deliver projects on time with high code quality.'
       ],
-      technologies: ['ASP.NET MVC', 'Entity Framework', 'SQL Server', 'jQuery']
+      technologies: ['ASP.NET Core', 'REST Apis','MVC','Angular','TypeScript','JavaScript','HTML','CSS','MSSQL','PostgreSql']
     }
   ]);
 }
